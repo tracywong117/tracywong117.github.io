@@ -1,9 +1,10 @@
 ---
-title: First Neural Network that Can Learn and Can be Learned
+title: Neural Network Can Learn Any Pattern
 date: 2023-11-17 15:31:00 +0800
 categories: [AI]
 tags: [Neural Network, PyTorch, Graphics Can Explain]     # TAG names should always be lowercase
 math: true
+comments: true
 ---
 
 ## Universal approximation theorem
@@ -174,7 +175,7 @@ MSE =
 $$
 
 where
-$n$ is the number of data points, $Y_i$ is the observed value and $\hat{Y}_i$ is the predicted value.
+$n$ is the number of data points, $Y_i$ is the observed value (target) and $\hat{Y}_i$ is the predicted value (input).
 
 ### Backpropagation
 Backpropagation is a technique used in training neural networks to adjust the parameters (weights and biases) of the network based on the computed loss. The primary goal of backpropagation is to minimize the difference between the predicted output of the neural network and the desired output, which is measured by the loss function. In this sense, backpropagation serves as the key mechanism by which neural networks learn from data. 
@@ -192,10 +193,11 @@ Backpropagation is a technique used in training neural networks to adjust the pa
 {: .prompt-info }
 
 > [torch.optim.Optimizer.step](https://pytorch.org/docs/stable/generated/torch.optim.Optimizer.step.html) <br>
-> Updates the values of the variables using the optimizer. Taking stochastic gradient descent (SGD) as an example, it adjusts the variable values by subtracting the product of the learning rate (lr) and the gradient. $$ x=x-lr*x*grad $$
+> Updates the values of the variables using the optimizer. Taking stochastic gradient descent (SGD) as an example, it adjusts the variable values by subtracting the product of the learning rate (lr) and the gradient. $$ x=x-lr*x.grad $$
 {: .prompt-info }
 
 #### Try out torch.Tensor.backward
+Let's use a simple function to observe the behavior of torch.Tensor.backward.
 
 ``` python 
 x = torch.tensor(np.array([-10.0, 5.0]), requires_grad=True)
@@ -209,7 +211,14 @@ print(x.grad)
 # tensor([-20.,  10.], dtype=torch.float64)
 ```
 
-$$ \frac{df}{da} = \frac{d(a^2+b^2)}{a} = 2a $$
+> torch.sum(x**2).backward() <br>
+> => $$ f = a^2 + b^2 $$ where $$ a = -10.0 $$ and $$ b = 5.0 $$ in this case
+> 
+> $$ \frac{df}{da} = \frac{d(a^2+b^2)}{da} = 2a $$
+>
+> $$ x.grad[0] = x.grad + \frac{df}{da} = 0 + 2a = -20 $$<br>
+> $$ x.grad[1] = x.grad + \frac{df}{db} = 0 + 2b = 10 $$
+{: .prompt-tip }
 
 Do this again
 ``` python
@@ -218,6 +227,10 @@ torch.sum(x**2).backward()
 print(x.grad)
 # tensor([-40.,  20.], dtype=torch.float64)
 ```
+
+> $$ x.grad[0] = x.grad + \frac{df}{da} = -20 + 2a = -40 $$ <br>
+> $$ x.grad[1] = x.grad + \frac{df}{db} = 10 + 2b = 20 $$
+{: .prompt-tip}
 
 > When calling backward() on a tensor, the gradients are calculated and accumulated in the grad attribute of the tensor. If multiple backward passes are performed without resetting the gradients using zero_grad(), the gradients are accumulated across those passes.
 {: .prompt-warning }
