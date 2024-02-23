@@ -121,7 +121,7 @@ For the activation function ReLU,
 
 $$ ReLU(x) = MAX(x, 0) $$
 
-![](/assets/graphics/first neural network.drawio.png)
+![](/assets/graphics/first-neural-network.drawio.png)
 
 The parameters of our neural network are as follows: 
 ``` python
