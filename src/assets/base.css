@@ -1,8 +1,3 @@
-:root {
- --primary-color: rgb(179,16,159); /* pink */
-}
-
-
 /* @media (prefers-color-scheme: dark) {
   :root {
     --color-background: var(--vt-c-black);
@@ -50,35 +45,3 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-h1, h2, h3, h4 {
-  font-family: 'Montserrat', sans-serif;
-  @apply pb-2;
-} 
-
-h1 {
-  @apply text-4xl font-medium;
-}
-
-h2 {
-  @apply text-2xl font-semibold;
-}
-
-h3 {
-  @apply text-xl;
-}
-
-p {
-  margin: 0 0 1.5em;
-}
-
-/* a {
-  color: var(--primary-color);
-} */
-
-
-
-
-
-.link-button{
-  @apply flex items-center gap-1 px-2 py-0.5 cursor-pointer border rounded-sm text-pink-300 border-pink-500 hover:bg-violet-600 hover:text-white hover:border-violet-600;
-}

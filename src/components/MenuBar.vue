@@ -3,12 +3,14 @@
         <!-- Menu bar -->
         <nav class="flex items-center justify-between px-4 py-3">
             <div></div>
-            <div class="flex items-center gap-5">
-                <button v-for="item in menu" :key="item.text" class="cursor-pointer text-gray-200 transition px-1 text-xl"
-                    :class="{'font-bold': current === item.text }" @click="goTo(item)">{{ item.text
-                    }}</button>
-            </div>
+            <!-- <div class="text-white text-xl">Tracy Wong</div> -->
             <div class="flex gap-5 px-4">
+                <div class="flex items-center gap-5">
+                    <button v-for="item in menu" :key="item.text"
+                        class="cursor-pointer text-gray-500 transition px-1 text-xl"
+                        :class="{ 'text-white': current === item.text }" @click="goTo(item)">{{ item.text
+                        }}</button>
+                </div>
                 <a href="https://github.com/tracywong117" target="_blank">
                     <i class="fa-brands fa-github text-white text-2xl"></i>
                 </a>
@@ -21,7 +23,7 @@
             </div>
         </nav>
         <!-- Progress bar -->
-        <div class="h-[2px] bg-pink-300 transition-all duration-200" :style="{ width: scrollPercent + '%' }"></div>
+        <div class="h-[2px] bg-lilac-soft transition-all duration-200" :style="{ width: scrollPercent + '%' }"></div>
     </header>
 </template>
 
@@ -31,10 +33,10 @@ export default {
     data() {
         return {
             scrollPercent: 0,
-            current: "About",
+            current: "about",
             menu: [
-                { text: "About", href: "" },
-                { text: "Blog", href: "/blog" },
+                { text: "about", href: "" },
+                { text: "blog", href: "/blog" },
             ]
         };
     },

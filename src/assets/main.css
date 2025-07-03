@@ -1,2 +1,45 @@
-@import './base.css';
 @import "tailwindcss";
+@import './base.css';
+
+@theme {
+    --color-lilac-very-pale: #ede9fe;
+    --color-lilac-pale: #ddd6fe;
+    --color-lilac-soft: #8b5cf6;
+    --color-lilac-strong: #7c3aed;
+    --color-lilac-very-strong: #6d28d9;
+
+    --color-primary-blue: #2563eb;
+}
+
+
+h2,
+h3,
+h4 {
+    font-family: 'Montserrat', sans-serif;
+    @apply pb-2;
+}
+
+h1 {
+    @apply text-4xl font-medium;
+}
+
+h2 {
+    @apply text-2xl font-semibold;
+}
+
+h3 {
+    @apply text-xl;
+}
+
+p {
+    @apply pb-2;
+}
+
+.website-link {
+    @apply text-lilac-soft hover:text-lilac-very-strong ;
+}
+
+.link-button {
+    @apply flex items-center gap-1 px-2 cursor-pointer border rounded-sm mb-2;
+    @apply text-lilac-strong border-lilac-strong hover:bg-lilac-strong hover:text-white;
+}

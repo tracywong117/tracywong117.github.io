@@ -1,6 +1,6 @@
 <template>
     <div class="flex flex-col items-center justify-center pt-10">
-        <div class="flex mx-auto w-4/5 p-2">
+        <div class="flex mx-auto w-4/5 2xl:w-1/2 p-2">
             <div class="flex flex-col items-center md:flex-row gap-15">
                 <div class="md:w-2/6 w-full flex flex-col items-center">
                     <img src="/tracy-image.png" alt="Tracy Wong" class="">
@@ -11,6 +11,23 @@
                     <h1>About me</h1>
                     <div class="py-2">
                         <p>
+                            I am an AI Programmer at <a href="https://www.d24h.hk/" target="_blank"
+                                class="website-link">The Laboratory of Data Discovery for Health</a>, where I train
+                            embedding models for short sequences in <a href="https://www.ncbi.nlm.nih.gov/sra"
+                                target="_blank" class="website-link">Sequence Read Archive</a> using
+                            Transformer architectures and build large-scale
+                            search systems for SRA metadata and short sequences by similarity. Optimizing running time
+                            and memory usage is one of my main focuses, which
+                            includes wrapping C++ code with Python interfaces to offload heavy computations from Python
+                            and implementing
+                            efficient data structures. I also regularly read research papers to understand how others
+                            approach similar problems and keep up with the latest advancements.
+                        </p>
+                        <p>
+                            I graduated with a Bachelor of Engineering in Artificial Intelligence - Systems &
+                            Technologies from The
+                            Chinese University of Hong Kong in 2023. I minored in Mathematics, which has helped me
+                            develop a strong foundation in mathematical concepts and their applications in AI.
                         </p>
 
                     </div>
@@ -45,7 +62,7 @@
 
                                 </div>
                             </div>
-                            <!-- <i class="fa-brands fa-github text-2xl  ml-4"></i> GitHub -->
+                            <!-- <i class="fa-brands fa-github text-1xl  ml-4"></i> GitHub -->
                         </div>
                     </div>
                 </div>
@@ -55,16 +72,16 @@
         <div class="h-10"></div>
         <!-- Projects -->
 
-        <div class="flex flex-col mx-auto w-4/5 px-2 py-4 bg-gray-100">
+        <div class="flex flex-col mx-auto w-4/5 2xl:w-1/2 px-4 py-4 bg-gray-100 gap-10">
             <div class="flex flex-col items-start md:flex-row gap-15">
-                <div class="md:w-2/6 w-full p-2">
+                <div class="md:w-2/6 w-full">
                     <h1>Work Projects</h1>
                 </div>
                 <div class="md:w-4/6 w-full">
                     <div>
                         <a href="">
                             <h2>
-                                SRA Sequenc Search
+                                SRA Sequence Search
                             </h2>
                         </a>
                         <p>
@@ -73,7 +90,11 @@
                             sequence-based
                             searches, enabling them to find specific sequences or related data efficiently.
                         </p>
-                        <button class="link-button"><i class="fa-brands fa-github text-2xl"></i>GitHub</button>
+                        <!-- <div class="flex gap-2">
+                            <a class="link-button">
+                                <i class="fa-brands fa-github text-1xl"></i>GitHub
+                            </a>
+                        </div> -->
                     </div>
                     <div>
                         <a href="">
@@ -87,6 +108,11 @@
                             and easily find relevant metadata for biological sequences, facilitating data discovery and
                             analysis.
                         </p>
+                        <div class="flex gap-2">
+                            <a href="https://github.com/leod24h/sra-search" target="_blank" class="link-button">
+                                <i class="fa-brands fa-github text-1xl"></i>GitHub
+                            </a>
+                        </div>
                     </div>
                     <div>
                         <a href="">
@@ -102,11 +128,17 @@
                             of
                             interest.
                         </p>
+                        <div class="flex gap-2">
+                            <a href="https://www.innoblocktech.com/safeguard-series/" target="_blank"
+                                class="link-button">
+                                Link
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="flex flex-col items-start md:flex-row gap-15">
-                <div class="md:w-2/6 w-full p-2">
+                <div class="md:w-2/6 w-full">
                     <h1>School Projects</h1>
                 </div>
                 <div class="md:w-4/6 w-full">
@@ -122,6 +154,13 @@
                             on their content, helping to improve the quality of user-generated content on movie review
                             platforms.
                         </p>
+                        <div class="flex gap-2">
+                            <a href="https://github.com/tracywong117/Spam-Movie-Reviews-Detection" target="_blank"
+                                class="link-button">
+                                <i class="fa-brands fa-github text-1xl"></i>GitHub
+                            </a>
+                            <!-- <a href="" target="_blank" class="link-button">PDF</a> -->
+                        </div>
                     </div>
                     <div>
                         <a href="">
@@ -136,11 +175,18 @@
                             players
                             understand the rhythm and timing of the music, enhancing their gaming experience.
                         </p>
+                        <div class="flex gap-2">
+                            <a href="https://github.com/tracywong117/Melody-Quest" target="_blank" class="link-button">
+                                <i class="fa-brands fa-github text-1xl"></i>GitHub
+                            </a>
+                            <a href="https://github.com/tracywong117/Melody-Quest/blob/main/Auto-Generated%20Beatmaps%20and%20Song%20Feature%20Visualization%20for%20a%20Rhythm%20Game.pdf"
+                                target="_blank" class="link-button">PDF</a>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="flex flex-col items-start md:flex-row gap-15">
-                <div class="md:w-2/6 w-full p-2">
+                <div class="md:w-2/6 w-full">
                     <h1>Side Projects</h1>
                 </div>
                 <div class="md:w-4/6 w-full">
@@ -155,32 +201,51 @@
                             content analysis. It uses artificial intelligence algorithms to identify key moments in a
                             video, allowing users to extract and save specific segments for further use or analysis.
                         </p>
+                        <div class="flex gap-2">
+                            <a href="https://github.com/tracywong117/AI-Video-Segment-Cutter" target="_blank"
+                                class="link-button"><i class="fa-brands fa-github text-1xl"></i>GitHub</a>
+                            <a href="https://colab.research.google.com/drive/18GD-tQ9hIRG6f_9hLGMqSjx8PNTXPmy3?usp=sharing"
+                                target="_blank" class="link-button">Google Colab</a>
+                        </div>
                     </div>
                     <div>
-                        <a href="">
-                            <h2>
-                                Daily Mood Tracker
-                            </h2>
-                        </a>
+                        <!-- <a href=""> -->
+                        <h2>
+                            Daily Mood Tracker
+                        </h2>
+                        <!-- </a> -->
                         <p>
                             The Daily Mood Tracker is a personal project that allows users to log and track their daily
                             moods. It provides insights into emotional patterns over time, helping individuals
                             understand
                             their mental well-being and identify triggers for mood changes.
                         </p>
+                        <div class="flex gap-2">
+                            <a href="https://github.com/tracywong117/daily-mood-tracker" target="_blank"
+                                class="link-button">
+                                <i class="fa-brands fa-github text-1xl"></i>GitHub
+                            </a>
+                        </div>
                     </div>
                     <div>
-                        <a href="">
-                            <h2>
-                                Flower Journal: Self-implemented Draggable Calendar
-                            </h2>
-                        </a>
+                        <!-- <a href=""> -->
+                        <h2>
+                            Flower Journal: Self-implemented Draggable Calendar
+                        </h2>
+                        <!-- </a> -->
                         <p>
                             The Flower Journal is a self-implemented draggable calendar application that allows users to
                             organize their schedules and tasks visually. It features a user-friendly interface with
                             drag-and-drop
                             functionality, enabling easy management of events and reminders.
                         </p>
+                        <div class="flex gap-2">
+                            <a href="https://github.com/tracywong117/FlowerJournal" target="_blank" class="link-button">
+                                <i class="fa-brands fa-github text-1xl"></i>GitHub
+                            </a>
+                            <a href="https://tracywong117.github.io/FlowerJournalApp" target="_blank"
+                                class="link-button">Demo site</a>
+                        </div>
                     </div>
                 </div>
             </div>
