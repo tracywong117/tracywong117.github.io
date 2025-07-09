@@ -12,6 +12,7 @@ export default defineConfig({
     vueDevTools(),
     tailwindcss(),
   ],
+  base: '/',
   assetsInclude: ['**/*.md'],
   resolve: {
     alias: {

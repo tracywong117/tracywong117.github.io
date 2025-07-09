@@ -76,23 +76,23 @@ p {
 
 .markdown-body .callout.callout-note {
     border: 2px solid #60a5fa;        /* Blue */
-    background: #eff6ff;
+    /* background: #eff6ff; */
   }
   .markdown-body .callout.callout-tip {
     border: 2px solid #34d399;        /* Green */
-    background: #ecfdf5;
+    /* background: #ecfdf5; */
   }
   .markdown-body .callout.callout-important {
     border: 2px solid #fde047;        /* Yellow */
-    background: #fef9c3;
+    /* background: #fef9c3; */
   }
   .markdown-body .callout.callout-warning {
     border: 2px solid #f87171;        /* Red */
-    background: #fef2f2;
+    /* background: #fef2f2; */
   }
   .markdown-body .callout.callout-caution {
     border: 2px solid #a78bfa;        /* Purple */
-    background: #f5f3ff;
+    /* background: #f5f3ff; */
   }
   
   /* Title styling with matching accent and border */

@@ -2,7 +2,7 @@
   <div id="app">
     <MenuBar />
     <div class="h-16"></div>
-    <router-view />
+    <router-view class="min-h-lvh" />
     <div class="h-16"></div>
     <!-- Footer -->
     <footer class="text-center text-xs py-2 bg-lilac-pale">
