@@ -1,27 +1,30 @@
 <template>
     <header class="fixed top-0 left-0 w-full z-30 shadow-sm bg-black">
-        <!-- Menu bar -->
-        <nav class="flex items-center justify-between px-4 py-3">
-            <div></div>
-            <!-- <div class="text-white text-xl">Tracy Wong</div> -->
-            <div class="flex gap-5 px-4">
-                <div class="flex items-center gap-5">
-                    <button v-for="item in menu" :key="item.text"
-                        class="cursor-pointer text-gray-500 transition px-1 text-xl"
-                        :class="{ 'text-white': current === item.text }" @click="goTo(item)">{{ item.text
-                        }}</button>
+        <div class="flex items-center justify-center">
+            <!-- Menu bar -->
+            <nav class="flex items-center justify-between py-3 w-4/5 xl:w-260">
+                <div class="text-white px-2 text-2xl">
+                    <!-- <h1>Tracy Wong</h1> -->
                 </div>
-                <a href="https://github.com/tracywong117" target="_blank">
-                    <i class="fa-brands fa-github text-white text-2xl"></i>
-                </a>
-                <a href="https://linkedin.com/tracywong117" target="blank">
-                    <i class="fa-brands fa-linkedin text-white text-2xl"></i>
-                </a>
-                <a href="mailto:tracywong117@gmail.com" target="blank">
-                    <i class="fa-solid fa-envelope text-white text-2xl"></i>
-                </a>
-            </div>
-        </nav>
+                <div class="flex gap-5">
+                    <div class="flex items-center gap-5">
+                        <button v-for="item in menu" :key="item.text"
+                            class="cursor-pointer text-gray-500 transition px-1 text-xl"
+                            :class="{ 'text-white': current === item.text }" @click="goTo(item)">{{ item.text
+                            }}</button>
+                        <a href="https://github.com/tracywong117" target="_blank">
+                            <i class="fa-brands fa-github text-white text-2xl"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/tracywong117/" target="blank">
+                            <i class="fa-brands fa-linkedin text-white text-2xl"></i>
+                        </a>
+                        <a href="mailto:tracywong117@gmail.com" target="blank">
+                            <i class="fa-solid fa-envelope text-white text-2xl"></i>
+                        </a>
+                    </div>
+                </div>
+            </nav>
+        </div>
         <!-- Progress bar -->
         <div class="h-[2px] bg-lilac-soft transition-all duration-200" :style="{ width: scrollPercent + '%' }"></div>
     </header>
@@ -35,12 +38,16 @@ export default {
             scrollPercent: 0,
             current: "about",
             menu: [
-                { text: "about", href: "" },
-                { text: "blog", href: "/blog" },
+                { text: "about", route: "/" },
+                { text: "blog", route: "/blog" },
             ]
         };
     },
     mounted() {
+
+        this.current = this.menu.find(menuItem => menuItem.route === this.$route.path)?.text || "about";
+        window.addEventListener("scroll", this.handleScroll, { passive: true });
+        this.handleScroll();
         window.addEventListener("scroll", this.handleScroll, { passive: true });
         this.handleScroll();
     },

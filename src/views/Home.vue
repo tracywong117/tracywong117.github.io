@@ -1,6 +1,6 @@
 <template>
     <div class="flex flex-col items-center justify-center pt-10">
-        <div class="flex mx-auto w-4/5 2xl:w-1/2 p-2">
+        <div class="flex mx-auto w-4/5 xl:w-260 p-2">
             <div class="flex flex-col items-center md:flex-row gap-15">
                 <div class="md:w-2/6 w-full flex flex-col items-center">
                     <img src="/tracy-image.png" alt="Tracy Wong" class="">
@@ -72,24 +72,29 @@
         <div class="h-10"></div>
         <!-- Projects -->
 
-        <div class="flex flex-col mx-auto w-4/5 2xl:w-1/2 px-4 py-4 bg-gray-100 gap-10">
+        <div class="flex flex-col mx-auto w-4/5 xl:w-260 px-4 py-4 bg-gray-100 gap-10">
             <div class="flex flex-col items-start md:flex-row gap-15">
                 <div class="md:w-2/6 w-full">
                     <h1>Work Projects</h1>
                 </div>
                 <div class="md:w-4/6 w-full">
                     <div>
-                        <a href="">
-                            <h2>
-                                SRA Sequence Search
-                            </h2>
-                        </a>
-                        <p>
-                            The SRA Sequence Search project aims to provide a powerful search engine for biological
-                            sequences stored in the Sequence Read Archive (SRA). It allows users to perform
-                            sequence-based
-                            searches, enabling them to find specific sequences or related data efficiently.
-                        </p>
+                        <div class="flex flex-row gap-2">
+                            <div>
+                                <a href="">
+                                    <h2>
+                                        SRA Sequence Search
+                                    </h2>
+                                </a>
+                                <p class="description">
+                                    The SRA Sequence Search project aims to provide a powerful search engine for biological
+                                    sequences stored in the Sequence Read Archive (SRA). It allows users to perform
+                                    sequence-based
+                                    searches, enabling them to find specific sequences or related data efficiently.
+                                </p>
+                            </div>
+                            
+                        </div>
                         <!-- <div class="flex gap-2">
                             <a class="link-button">
                                 <i class="fa-brands fa-github text-1xl"></i>GitHub
@@ -102,7 +107,7 @@
                                 SRA Metadata Search
                             </h2>
                         </a>
-                        <p>
+                        <p class="description">
                             The SRA Metadata Search project focuses on developing a scalable and efficient search
                             infrastructure for the Sequence Read Archive (SRA). It aims to enable researchers to quickly
                             and easily find relevant metadata for biological sequences, facilitating data discovery and
@@ -120,7 +125,7 @@
                                 SafeGuardChain: Real-Time Person Recognition, Tracking, and Object Detection
                             </h2>
                         </a>
-                        <p>
+                        <p class="description">
                             SafeGuardChain is a real-time person recognition, tracking, and object detection system
                             designed to enhance security and safety in public spaces. It utilizes advanced computer
                             vision
@@ -148,7 +153,7 @@
                                 Spam Movie Reviews Detection through Supervised Learning
                             </h2>
                         </a>
-                        <p>
+                        <p class="description">
                             This project focuses on detecting spam movie reviews using supervised learning techniques.
                             It involves training a machine learning model to classify reviews as spam or non-spam based
                             on their content, helping to improve the quality of user-generated content on movie review
@@ -168,7 +173,7 @@
                                 Auto-Generated Beatmaps and Song Feature Visualization for a Rhythm Game
                             </h2>
                         </a>
-                        <p>
+                        <p class="description">
                             This project involves the development of a system that automatically generates beatmaps for
                             a
                             rhythm game based on song features. It also includes a visualization component to help
@@ -196,7 +201,7 @@
                                 AI Video Segment Cutter
                             </h2>
                         </a>
-                        <p>
+                        <p class="description">
                             The AI Video Segment Cutter is a tool designed to automatically segment videos based on
                             content analysis. It uses artificial intelligence algorithms to identify key moments in a
                             video, allowing users to extract and save specific segments for further use or analysis.
@@ -214,7 +219,7 @@
                             Daily Mood Tracker
                         </h2>
                         <!-- </a> -->
-                        <p>
+                        <p class="description">
                             The Daily Mood Tracker is a personal project that allows users to log and track their daily
                             moods. It provides insights into emotional patterns over time, helping individuals
                             understand
@@ -233,7 +238,7 @@
                             Flower Journal: Self-implemented Draggable Calendar
                         </h2>
                         <!-- </a> -->
-                        <p>
+                        <p class="description">
                             The Flower Journal is a self-implemented draggable calendar application that allows users to
                             organize their schedules and tasks visually. It features a user-friendly interface with
                             drag-and-drop
