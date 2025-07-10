@@ -81,11 +81,11 @@
                     <div>
                         <div class="flex flex-row gap-2">
                             <div>
-                                <a href="">
+                                <router-link class="website-link" to="page/SRA-Sequence-Search">
                                     <h2>
                                         SRA Sequence Search
                                     </h2>
-                                </a>
+                                </router-link>
                                 <p class="description">
                                     The SRA Sequence Search project aims to provide a powerful search engine for biological
                                     sequences stored in the Sequence Read Archive (SRA). It allows users to perform
@@ -102,11 +102,11 @@
                         </div> -->
                     </div>
                     <div>
-                        <a href="">
+                        <router-link class="website-link" to="page/SRA-Metadata-Search">
                             <h2>
                                 SRA Metadata Search
                             </h2>
-                        </a>
+                        </router-link>
                         <p class="description">
                             The SRA Metadata Search project focuses on developing a scalable and efficient search
                             infrastructure for the Sequence Read Archive (SRA). It aims to enable researchers to quickly
@@ -120,11 +120,11 @@
                         </div>
                     </div>
                     <div>
-                        <a href="">
+                        <router-link class="website-link" to="page/safeguard">
                             <h2>
                                 SafeGuardChain: Real-Time Person Recognition, Tracking, and Object Detection
                             </h2>
-                        </a>
+                        </router-link>
                         <p class="description">
                             SafeGuardChain is a real-time person recognition, tracking, and object detection system
                             designed to enhance security and safety in public spaces. It utilizes advanced computer
@@ -148,11 +148,11 @@
                 </div>
                 <div class="md:w-4/6 w-full">
                     <div>
-                        <a href="">
+                        <router-link class="website-link" to="page/spam-movie-reviews-detection-through-supervised-learning">
                             <h2>
                                 Spam Movie Reviews Detection through Supervised Learning
                             </h2>
-                        </a>
+                        </router-link>
                         <p class="description">
                             This project focuses on detecting spam movie reviews using supervised learning techniques.
                             It involves training a machine learning model to classify reviews as spam or non-spam based
@@ -168,11 +168,11 @@
                         </div>
                     </div>
                     <div>
-                        <a href="">
+                        <router-link class="website-link" to="page/auto-generated-beatmaps-and-song-feature-visualization-for-a-rhythm-game">
                             <h2>
                                 Auto-Generated Beatmaps and Song Feature Visualization for a Rhythm Game
                             </h2>
-                        </a>
+                        </router-link>
                         <p class="description">
                             This project involves the development of a system that automatically generates beatmaps for
                             a
@@ -196,11 +196,11 @@
                 </div>
                 <div class="md:w-4/6 w-full">
                     <div>
-                        <a href="">
+                        <router-link class="website-link" to="page/ai-video-segment-cutter">
                             <h2>
                                 AI Video Segment Cutter
                             </h2>
-                        </a>
+                        </router-link>
                         <p class="description">
                             The AI Video Segment Cutter is a tool designed to automatically segment videos based on
                             content analysis. It uses artificial intelligence algorithms to identify key moments in a
@@ -214,11 +214,9 @@
                         </div>
                     </div>
                     <div>
-                        <!-- <a href=""> -->
                         <h2>
                             Daily Mood Tracker
                         </h2>
-                        <!-- </a> -->
                         <p class="description">
                             The Daily Mood Tracker is a personal project that allows users to log and track their daily
                             moods. It provides insights into emotional patterns over time, helping individuals
@@ -233,11 +231,9 @@
                         </div>
                     </div>
                     <div>
-                        <!-- <a href=""> -->
                         <h2>
                             Flower Journal: Self-implemented Draggable Calendar
                         </h2>
-                        <!-- </a> -->
                         <p class="description">
                             The Flower Journal is a self-implemented draggable calendar application that allows users to
                             organize their schedules and tasks visually. It features a user-friendly interface with

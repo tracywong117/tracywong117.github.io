@@ -1,5 +1,5 @@
 ---
 layout: page
-title: SRA Metadata Search
+title: SRA Sequence Search
 description: 
 ---

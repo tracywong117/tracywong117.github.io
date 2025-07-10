@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col items-center justify-center pt-10">
+  <div class="flex flex-col items-center pt-10">
     <div class="mx-auto w-4/5 xl:w-260 p-2">
       <router-link to="/blog" class="text-blue-600 hover:underline">← Back to Blog</router-link>
       <h1 class="text-3xl font-bold mt-4 mb-2">{{ post.title }}</h1>
