@@ -1,52 +1,52 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import "tailwindcss";
-@import './base.css';
+@import "./base.css";
 
 @theme {
-    --color-lilac-very-pale: #ede9fe;
-    --color-lilac-pale: #ddd6fe;
-    --color-lilac-soft: #8b5cf6;
-    --color-lilac-strong: #7c3aed;
-    --color-lilac-very-strong: #6d28d9;
+  --color-lilac-very-pale: #ede9fe;
+  --color-lilac-pale: #ddd6fe;
+  --color-lilac-soft: #8b5cf6;
+  --color-lilac-strong: #7c3aed;
+  --color-lilac-very-strong: #6d28d9;
 
-    --color-primary-blue: #2563eb;
+  --color-primary-blue: #2563eb;
 }
 
 h1,
 h2,
 h3,
 h4 {
-    font-family: 'Montserrat', sans-serif;
-    @apply pb-2;
+  font-family: "Montserrat", sans-serif;
+  @apply pb-2;
 }
 
 h1 {
-    @apply text-4xl font-medium;
+  @apply text-4xl font-medium;
 }
 
 h2 {
-    @apply text-2xl font-semibold;
+  @apply text-2xl font-semibold;
 }
 
 h3 {
-    @apply text-xl;
+  @apply text-xl;
 }
 
 p {
-    @apply pb-2 text-base;
+  @apply pb-2 text-base;
 }
 
 .description {
-    @apply text-sm text-gray-800;
+  @apply text-sm text-gray-800;
 }
 
 .website-link {
-    @apply text-lilac-soft hover:text-lilac-very-strong ;
+  @apply text-lilac-soft hover:text-lilac-very-strong;
 }
 
 .link-button {
-    @apply flex items-center gap-1 px-2 cursor-pointer border rounded-sm mb-2;
-    @apply text-lilac-strong border-lilac-strong hover:bg-lilac-strong hover:text-white;
+  @apply flex items-center gap-1 px-2 cursor-pointer border rounded-sm mb-2;
+  @apply text-lilac-strong border-lilac-strong hover:bg-lilac-strong hover:text-white;
 }
 
 .markdown-body .callout {
@@ -75,50 +75,49 @@ p {
 }
 
 .markdown-body .callout.callout-note {
-    border: 2px solid #60a5fa;        /* Blue */
-    /* background: #eff6ff; */
-  }
-  .markdown-body .callout.callout-tip {
-    border: 2px solid #34d399;        /* Green */
-    /* background: #ecfdf5; */
-  }
-  .markdown-body .callout.callout-important {
-    border: 2px solid #fde047;        /* Yellow */
-    /* background: #fef9c3; */
-  }
-  .markdown-body .callout.callout-warning {
-    border: 2px solid #f87171;        /* Red */
-    /* background: #fef2f2; */
-  }
-  .markdown-body .callout.callout-caution {
-    border: 2px solid #a78bfa;        /* Purple */
-    /* background: #f5f3ff; */
-  }
-  
-  /* Title styling with matching accent and border */
-  .markdown-body .callout-note .callout-title {
-    color: #2563eb;                   /* Strong Blue */
-    background: #eff6ff;
-    border-bottom: 1px solid #60a5fa;
-  }
-  .markdown-body .callout-tip .callout-title {
-    color: #059669;                   /* Strong Green */
-    background: #ecfdf5;
-    border-bottom: 1px solid #34d399;
-  }
-  .markdown-body .callout-important .callout-title {
-    color: #ca8a04;                   /* Strong Yellow */
-    background: #fef9c3;
-    border-bottom: 1px solid #fde047;
-  }
-  .markdown-body .callout-warning .callout-title {
-    color: #dc2626;                   /* Strong Red */
-    background: #fef2f2;
-    border-bottom: 1px solid #f87171;
-  }
-  .markdown-body .callout-caution .callout-title {
-    color: #7c3aed;                   /* Strong Purple */
-    background: #f5f3ff;
-    border-bottom: 1px solid #a78bfa;
-  }
-  
+  border: 2px solid #60a5fa; /* Blue */
+  /* background: #eff6ff; */
+}
+.markdown-body .callout.callout-tip {
+  border: 2px solid #34d399; /* Green */
+  /* background: #ecfdf5; */
+}
+.markdown-body .callout.callout-important {
+  border: 2px solid #fde047; /* Yellow */
+  /* background: #fef9c3; */
+}
+.markdown-body .callout.callout-warning {
+  border: 2px solid #f87171; /* Red */
+  /* background: #fef2f2; */
+}
+.markdown-body .callout.callout-caution {
+  border: 2px solid #a78bfa; /* Purple */
+  /* background: #f5f3ff; */
+}
+
+/* Title styling with matching accent and border */
+.markdown-body .callout-note .callout-title {
+  color: #2563eb; /* Strong Blue */
+  background: #eff6ff;
+  border-bottom: 1px solid #60a5fa;
+}
+.markdown-body .callout-tip .callout-title {
+  color: #059669; /* Strong Green */
+  background: #ecfdf5;
+  border-bottom: 1px solid #34d399;
+}
+.markdown-body .callout-important .callout-title {
+  color: #ca8a04; /* Strong Yellow */
+  background: #fef9c3;
+  border-bottom: 1px solid #fde047;
+}
+.markdown-body .callout-warning .callout-title {
+  color: #dc2626; /* Strong Red */
+  background: #fef2f2;
+  border-bottom: 1px solid #f87171;
+}
+.markdown-body .callout-caution .callout-title {
+  color: #7c3aed; /* Strong Purple */
+  background: #f5f3ff;
+  border-bottom: 1px solid #a78bfa;
+}

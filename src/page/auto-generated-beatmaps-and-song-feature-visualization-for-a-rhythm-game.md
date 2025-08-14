@@ -111,4 +111,4 @@ Building Melody Quest was a comprehensive learning experience in:
 8. Eerola, T., Vuoskoski, J. K. (2011). [Comparison of models of emotion in music](https://journals.sagepub.com/doi/10.1177/0305735610362821)
 9. Soleymani, M. et al. (2013). [1000 Songs for Emotional Analysis of Music](https://dl.acm.org/doi/10.1145/2506364.2506365)
 
-## [GitHub](https://github.com/tracywong117/Melody-Quest) | [Report](/assets/Auto-Generated Beatmaps and Song_Feature_Visualization_for_a_Rhythm_Game.pdf)
+## [GitHub](https://github.com/tracywong117/Melody-Quest) | [Report](https://github.com/tracywong117/Melody-Quest/blob/main/Auto-Generated%20Beatmaps%20and%20Song%20Feature%20Visualization%20for%20a%20Rhythm%20Game.pdf)

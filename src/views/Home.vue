@@ -164,7 +164,7 @@
                                 class="link-button">
                                 <i class="fa-brands fa-github text-1xl"></i>GitHub
                             </a>
-                            <!-- <a href="" target="_blank" class="link-button">PDF</a> -->
+                            <a href="/fyp_final_report.pdf" target="_blank" class="link-button">PDF</a>
                         </div>
                     </div>
                     <div>
@@ -228,6 +228,8 @@
                                 class="link-button">
                                 <i class="fa-brands fa-github text-1xl"></i>GitHub
                             </a>
+                            <a href="https://tracywong117.github.io/dailymood2024/" target="_blank"
+                                class="link-button">Demo site</a>
                         </div>
                     </div>
                     <div>

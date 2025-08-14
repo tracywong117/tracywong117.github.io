@@ -6,6 +6,32 @@
   font-weight: normal;
 }
 
+ul {
+  list-style: disc;
+}
+
+/* second level list-style */
+ul ul {
+  list-style: circle;
+}
+
+/* third level list-style */
+ul ul ul {
+  list-style: square;
+}
+
+ol {
+  list-style: decimal;
+}
+
+ol ol {
+  list-style: upper-alpha;
+}
+
+ol ol ol {
+  list-style: lower-alpha;
+}
+
 body {
   min-height: 100vh;
   transition:
